@@ -10,7 +10,16 @@ def fetch_words():
     story.close()
 
     for word in story_words:
+        return story_words
+
+def print_words(story_words):
+    for word in story_words:
         print(word)
 
+def main():
+    words = fetch_words()
+    print_words(words)
+
 if __name__ == '__main__':
-    fetch_words()
+    main()
+
