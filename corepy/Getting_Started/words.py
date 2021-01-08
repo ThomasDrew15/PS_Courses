@@ -1,5 +1,6 @@
-import sys
 from urllib.request import urlopen
+import sys
+
 
 def fetch_words():
     story = urlopen(url)
@@ -11,14 +12,17 @@ def fetch_words():
     story.close()
     return story_words
 
+
 def print_items(items):
     for item in items:
         print(item)
 
+
 def main():
+    url = sys.argv[1]
     words = fetch_words(url)
     print_items(words)
 
+
 if __name__ == '__main__':
     main()
-
