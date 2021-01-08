@@ -1,5 +1,4 @@
 def fetch_words():
-
     from urllib.request import urlopen
 
     story = urlopen('http://sixty-north.com/c/t.txt')
@@ -13,5 +12,5 @@ def fetch_words():
     for word in story_words:
         print(word)
 
-if (__name__) == '__main__':
+if __name__ == '__main__':
     fetch_words()
