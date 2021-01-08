@@ -1,5 +1,5 @@
-from urllib.request import urlopen
 import sys
+from urllib.request import urlopen
 
 
 def fetch_words(url):
