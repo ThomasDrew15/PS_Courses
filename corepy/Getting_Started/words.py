@@ -1,4 +1,4 @@
-    from urllib.request import urlopen
+from urllib.request import urlopen
 
 def fetch_words():
     story = urlopen('http://sixty-north.com/c/t.txt')
