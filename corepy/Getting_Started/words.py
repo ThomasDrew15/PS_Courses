@@ -2,7 +2,7 @@ from urllib.request import urlopen
 import sys
 
 
-def fetch_words():
+def fetch_words(url):
     story = urlopen(url)
     story_words = []
     for line in story:
